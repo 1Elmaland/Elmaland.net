@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Oyun Modları - Minecraft Sunucu</title>
+    <title>Oyun Modları - Minecraft Sunucum</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,18 +11,31 @@
 <div class="overlay"></div>
 
 <nav>
-    <a href="index.html">Ana Sayfa</a>
-    <a href="kurallar.html">Kurallar</a>
-    <a href="modlar.html">Oyun Modları</a>
-    <a href="login.html">Giriş Yap</a>
-    <a href="register.html">Kayıt Ol</a>
+    <div class="nav-left">
+        <img src="images/logo.png" alt="Logo" class="logo">
+    </div>
+    <div class="nav-right">
+        <a href="login.html" class="btn">Giriş Yap</a>
+        <a href="register.html" class="btn">Kayıt Ol</a>
+    </div>
 </nav>
 
-<section class="mods">
-    <h2>🎮 Oyun Modları</h2>
-    <p>🌄 Skyblock: Adada kendi dünyanı kur ve hayatta kal!</p>
-    <p>🏞️ Survival: Doğada hayatta kal, kaynak topla, inşa et.</p>
-    <p>⚔️ BoxPvP: Hızlı PvP maçları, düellolar ve savaş arenası!</p>
+<section class="mods-full">
+    <h2>Oyun Modları</h2>
+    <div class="mods-grid">
+        <div class="mod-card">
+            <h3>Skyblock</h3>
+            <p>Adanda kendi adanı kur ve hayatta kal. Özel görevler ve ada yarışmalarıyla eğlenceli bir deneyim!</p>
+        </div>
+        <div class="mod-card">
+            <h3>Survival</h3>
+            <p>Doğada kaynak topla, inşa et, hayatta kal ve arkadaşlarınla keşfe çık!</p>
+        </div>
+        <div class="mod-card">
+            <h3>BoxPvP</h3>
+            <p>Hızlı PvP mücadeleleri, düellolar ve özel arenalarda savaş!</p>
+        </div>
+    </div>
 </section>
 
 </body>
