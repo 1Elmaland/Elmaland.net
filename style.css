@@ -1,0 +1,22 @@
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.rule-card {
+    background: rgba(0,0,0,0.45);
+    padding: 30px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.rule-card:hover {
+    transform: translateY(-20px) scale(1.08);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.rule-card h3 {
+    margin-bottom: 10px;
+}
