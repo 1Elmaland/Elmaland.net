@@ -5,12 +5,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     color: white;
     min-height: 100vh;
 }
 
-/* Arka plan foto */
+/* Arka plan */
 .background {
     position: fixed;
     inset: 0;
@@ -27,65 +27,78 @@ body {
 
 /* Navbar */
 nav {
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
     background: rgba(0,0,0,0.4);
 }
 
-nav a {
-    color: white;
-    margin: 0 15px;
+nav .logo {
+    width: 60px;
+    height: auto;
+}
+
+nav .nav-right a {
+    margin-left: 15px;
     text-decoration: none;
-    font-weight: bold;
+    color: white;
+    padding: 8px 15px;
+    background: #1e90ff;
+    border-radius: 8px;
 }
 
 /* Hero */
 .hero {
     height: 80vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.hero-box {
-    background: rgba(0,0,0,0.4);
-    padding: 50px 70px;
-    border-radius: 16px;
+.hero-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+.server-ip, .player-count {
+    font-size: 1.2rem;
+    margin: 5px 0;
 }
 
-.hero-buttons a.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    background: #1e90ff;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-/* Intro / Modlar / Kurallar */
-.intro, .rules, .mods, .form-section {
+/* Oyun Modları */
+.mods-preview, .mods-full {
     padding: 60px 10%;
     text-align: center;
 }
 
-.intro h2, .rules h2, .mods h2, .form-section h2 {
+.mods-preview h2, .mods-full h2 {
     font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.mods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
     margin-bottom: 20px;
 }
 
-.rules p, .mods p {
-    font-size: 1.2rem;
-    margin-bottom: 12px;
+.mod-card {
+    background: rgba(0,0,0,0.45);
+    padding: 20px;
+    border-radius: 16px;
 }
 
 /* Formlar */
+.form-section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
 .form-section form {
     display: flex;
     flex-direction: column;
@@ -107,4 +120,14 @@ nav a {
     border-radius: 8px;
     color: white;
     cursor: pointer;
+}
+
+/* Genel Buton */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #1e90ff;
+    padding: 8px 15px;
+    border-radius: 8px;
 }
