@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Minecraft Sunucu</title>
+    <title>Minecraft Sunucum</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -10,29 +10,44 @@
 <div class="background"></div>
 <div class="overlay"></div>
 
+<!-- Navbar -->
 <nav>
-    <a href="index.html">Ana Sayfa</a>
-    <a href="kurallar.html">Kurallar</a>
-    <a href="modlar.html">Oyun Modları</a>
-    <a href="login.html">Giriş Yap</a>
-    <a href="register.html">Kayıt Ol</a>
+    <div class="nav-left">
+        <img src="images/logo.png" alt="Logo" class="logo">
+    </div>
+    <div class="nav-right">
+        <a href="login.html" class="btn">Giriş Yap</a>
+        <a href="register.html" class="btn">Kayıt Ol</a>
+    </div>
 </nav>
 
+<!-- Hero -->
 <section class="hero">
-    <div class="hero-box">
-        <h1>Minecraft Sunucusu</h1>
-        <p>Hoş geldin! Sunucumuza katılmak için giriş yap veya kayıt ol.</p>
-        <div class="hero-buttons">
-            <a href="login.html" class="btn">Giriş Yap</a>
-            <a href="register.html" class="btn">Kayıt Ol</a>
-        </div>
-    </div>
+    <img src="images/logo.png" alt="Sunucu Logo" class="hero-logo">
+    <p class="server-ip">IP: play.mysunucu.com</p>
+    <p class="player-count">Aktif Oyuncu: 42</p>
 </section>
 
-<section class="intro">
-    <h2>🎮 Sunucumuzda Oyun Modları</h2>
-    <p>Skyblock, Survival ve BoxPvP modlarını deneyimle! Detaylar için <a href="modlar.html">buraya tıkla</a>.</p>
+<!-- Oyun Modları -->
+<section class="mods-preview">
+    <h2>Oyun Modları</h2>
+    <div class="mods-grid">
+        <div class="mod-card">
+            <h3>Skyblock</h3>
+            <p>Adanda hayatta kal, kendi dünyanı kur!</p>
+        </div>
+        <div class="mod-card">
+            <h3>Survival</h3>
+            <p>Doğada hayatta kal, kaynak topla, inşa et.</p>
+        </div>
+        <div class="mod-card">
+            <h3>BoxPvP</h3>
+            <p>Hızlı PvP maçları, düellolar ve arenalar.</p>
+        </div>
+    </div>
+    <a href="modlar.html" class="btn">Tüm Modlar</a>
 </section>
 
 </body>
 </html>
+
